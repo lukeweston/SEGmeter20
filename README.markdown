@@ -1,4 +1,4 @@
-
+Board dimensions = 4500 x 3475 thou. = 114.3 mm x 88.3 mm
 
 SEGmeter 2.0:
 
