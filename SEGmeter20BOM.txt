@@ -1,0 +1,53 @@
+SEGmeter 2.0 Bill of Materials
+
+Item								Qty.	Digi-Key SKU		Notes
+======================================================================================================
+
+Input electronics and ADC
+-------------------------
+
+220 K resistor, 1%, through-hole 0.4"				16	PPCQF220KCT-ND		For 8 x analog signal inputs (2 each channel). Should be 1% tolerance.
+1 K resistor, 1%, through-hole 0.4"				12	PPC1.00KYCT-ND		For 8 x analog signal inputs, plus four others used elsewhere in the circuit.
+												Should be 1% tolerance.
+1 uF capacitor, monolithic ceramic, 0.2" pitch			9	478-4657-ND		For 8 x analog signal inputs, plus 1 extra.
+100 nF (0.1 uF) capacitor, monolithic ceramic, 0.2" pitch	12	478-3188-ND		For 8 x analog signal inputs, plus a few others.
+16-pin DIP IC socket						1	3M5463-ND		IC socket for ADC chip.
+3.5 mm stereo TRS socket, switched, through-hole PCB mount	8	CP1-3515N-ND		Exactly the same sockets as used on existing boards.
+MCP3208 8-channel ADC IC, through-hole DIP package		1	MCP3208-CI/P-ND
+MCP1541TO 4.096V voltage reference IC, TO-92 through-hole	1	MCP1541-I/TO-ND
+
+Temperature Sensor
+------------------
+
+DS18B20 1-Wire Temperature Sensor IC				1	DS18B20+-ND		Could add a 3-pin header or Phoenix screw terminal or something on the board
+												if desired for external wiring.
+4.7 K resistor, 5% or better, through-hole 0.4"			1	4.7KQBK-ND		Optional if temperature sensor is not used.
+
+Microcontroller and core components
+-----------------------------------
+
+ATmega328-PU Microcontroller IC, DIP package			1	ATMEGA328-PU-ND		Also, must have access to an AVR ISP programmer to flash the bootloader
+												initially.
+28-pin DIP IC socket, 0.3" wide					1	3M5480-ND		IC socket for AVR.
+LED, red, 3 mm							1	754-1211-ND		Power LED. Could have different colour?
+LED, yellow, 3 mm						1	754-1212-ND		Status LED.
+6-pin 0.1" male pin header strip				1	A31116-ND		For FTDI cable
+6-pin 0.1" female pin header socket strip			2	S7004-ND		Arduino shield headers
+8-pin 0.1" female pin header socket strip			2	S7006-ND		Arduino shield headers
+2x3 pin header, male 0.1"					1	3M9459-ND		For ISP programming
+Momentary tactile pushbutton switch, right-angle		2	679-2400-ND		Same style as Seeduino Mega reset button.
+2x7 male 0.1" pin header					1	609-3457-ND		To mate with Dragino
+2x8 male 0.1" pin header					1	609-3220-ND		To mate with Dragino
+Micro-SD card socket						1	101-00660-68-6-1-ND	Optional, for micro-SD use.
+270 R resistor, 5% or better, through-hole 0.4"			5	270QBK-ND
+10 K resistor, 5% or better, through-hole 0.4"			6	10KQBK-ND
+22 pF capacitor, ceramic, 0.1" lead pitch			2	399-4162-ND
+16 MHz crystal, HC-49 low-profile, through-hole			1	887-1019-ND
+
+3 x Relay Outputs
+-----------------
+
+2N3904 NPN transistor, TO-92 through-hole package		3	2N3904FS-ND		Optional if relay outputs are not used.
+1N4004 diode, though-hole package				3	641-1311-1-ND		Optional if relay outputs are not used.
+LED, green, 3 mm, through-hole					3	754-1210-ND		3 x LEDs for relay output status. Could change colours?
+6-pin 0.1" Phoenix screw terminal block				1	277-1277-ND		Can just solder wires straight on or use a pin header or something if desired.
